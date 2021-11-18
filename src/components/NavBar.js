@@ -10,20 +10,23 @@ const NavBarStyle = styled.div`
     left: 0;
     top: 0;
     width: 100%;
-    padding: 1rem 0;
+    padding: 5px 0 0 0;
     position: fixed;
      .logo {
         color: var(--white);
+        padding: 0 1rem;
         font-size: 2rem;
         font-weight: bold;
-        text-align: center;
+        text-align: Left;
         font-family: 'Roboto', sans-serif;
+        display: inline-block;
     }
     ul {
         max-width: 1200px;
         margin: 0 auto;
         width: 90%;
         text-align: center;
+        display: inline-block;
     li {
         display: inline-block;
         border-right: 8px solid var(--blue);
@@ -67,7 +70,7 @@ const NavBarStyle = styled.div`
         }
         .mobile-menu-icon {
             display: block;
-            color: var(--blue);
+            color: var(--white);
         }
         .navItems {
             --top: 1rem;
@@ -103,7 +106,10 @@ export default function NavBar() {
     //add mobile screen function to the navbar to toggle, tab for key down event and hide items after clicked
     const[showNav, setShowNav] = React.useState(false);
     return(
-        <NavBarStyle>
+   <NavBarStyle>
+            <h1 className="logo">
+                <p>CarilyWebDev</p>
+            </h1>
             <div className="mobile-menu-icon" onClick={() => setShowNav(!showNav)}
                 role="button"
                 onKeyDown={() => setShowNav(!showNav)}
