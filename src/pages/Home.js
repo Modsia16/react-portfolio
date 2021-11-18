@@ -1,9 +1,10 @@
 import React from 'react'
-// import 'react-router-dom'
+import IntroSection from '../components/IntroSection';
+
 export default function Home() {
     return (
         <div>
-            <h1>Welcome to my portfolio</h1>
+            <IntroSection />
         </div>
     )
 }

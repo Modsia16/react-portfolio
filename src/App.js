@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router ,Routes ,Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 //router for links
 import Home from "./pages/Home";
@@ -22,6 +23,7 @@ export default function App() {
         <Route exact path="/resume" element={<Resume/>}></Route>
         <Route exact path="/" element={<Home/>}></Route>
         </Routes>
+        <Footer />
         </Router>
         </>
     );
