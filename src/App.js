@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 //components, Switch was not working, changed to Routes and Route
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route exact path="/about" element={<About/>}></Route>
         <Route exact path="/projects" element={<Projects/>}></Route>
         <Route exact path="/contact" element={<Contact/>}></Route>
+        <Route exact path="/resume" element={<Resume/>}></Route>
         <Route exact path="/" element={<Home/>}></Route>
         </Routes>
         </Router>
