@@ -23,10 +23,19 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
     a {
+        text-decoration: none;
         color: var(--yellow);
     }
     .active{
         color: var(--white);
+    }
+    button {
+        outline: none;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
     }
     `;
 

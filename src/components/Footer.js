@@ -38,7 +38,6 @@ a {
 .active {
     color: var(--white);
 }
-}
 
 `
 

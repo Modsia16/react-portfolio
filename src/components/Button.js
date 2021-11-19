@@ -7,8 +7,8 @@ const ButtonStyle = styled.div`
     .button {
         font-family: 'Roboto', 'Spectral SC', sans-serif;
         font-size: 1.5rem;
-        background-color: ${(props) => props.outline ? 'transparent' : 'var(--blue)'};
-        color: ${(props) => props.outline ? 'var(--blue)' : 'var(--grey)'};
+        background-color: ${(props) => props.outline ? 'transparent' : 'var(--grey)'};
+        color: ${(props) => props.outline ? 'var(--grey)' : 'var(--blue)'};
         padding: 1rem 2rem;
         border-radius: 8px;
         display: inline-block;
@@ -24,10 +24,8 @@ const ButtonStyle = styled.div`
 // on IntroSection,
 export default function Button({ btnText, btnLink, outline }) {
     return (
-        <ButtonStyle outline={outline}>
-        <div>
+        <ButtonStyle outline={outline} className="button-wrapper">
             <Link className="button" to={ btnLink }> { btnText } </Link>
-        </div>
         </ButtonStyle>
     )
 }
