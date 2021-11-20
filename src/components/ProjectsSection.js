@@ -11,7 +11,7 @@ SwiperCore.use([Navigation]);
 
 const ProjectsSectionStyled = styled.div`
 color: var(--blue);
-padding: 10rem 0;
+padding: 5rem 0;
 .projects__allItems {
   display: flex;
   gap: 3rem;
@@ -80,7 +80,7 @@ export default function ProjectsSection() {
                 >
                 {projects.map((project, index) => {
                     // eslint-disable-next-line array-callback-return
-                    if (index >= 5) return;
+                    if (index >= 6) return;
                     return (
                         <SwiperSlide key={project.id}>
                         <ProjectItem                         

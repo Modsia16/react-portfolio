@@ -4,6 +4,10 @@ import projectImg from '../assets/images/quiz.png'
 import styled from 'styled-components'
 
 const ProjectItemStyles = styled.div`
+a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
 .projectItem__img {
     width: 100%;
     height: 400px;
@@ -41,11 +45,11 @@ const ProjectItemStyles = styled.div`
 `;
 
 
-
+//make button links later
 export default function ProjectItem( {
     img = projectImg,
     title = 'Project Name',
-    desc = 'Lorem ipsum dolor sit amet, consectetu',
+    desc = 'Lorem ipsum dolor sit amet',
     link = '#',
     dep = 'View Project',
     
