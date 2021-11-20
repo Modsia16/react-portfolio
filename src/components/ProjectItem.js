@@ -1,56 +1,67 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import projectImg from '../assets/images/Nutrition-app.png'
+import projectImg from '../assets/images/quiz.png'
 import styled from 'styled-components'
 
 const ProjectItemStyles = styled.div`
- .projectItem__img {
-    width: 33%;
+.projectItem__img {
+    width: 100%;
     height: 400px;
+    border-radius: 12px;
     overflow: hidden;
-    border-radius: 5px;
-    display:block;
-    border: 1px solid var(--grey);
+    display: inline-block;
+    border: 4px solid var(--blue);
     img {
-        height: 100%;
+      height: 100%;
     }
-}
-.projectItem__info {
+  }
+  .projectItem__text {
     margin-top: 1rem;
-    background-color: var(--blue);
+    background-color: var(--white);
     padding: 1rem;
-    border-radius: 5px;
-}
-.projectItem__title {
-    font-size: 2.0rem; 
+    border-radius: 12px;
     font-family: 'Roboto', 'Spectral SC', sans-serif;
-}
-.projectItem_desc {
-    font-size: 1.2rem;
+  }
+  .projectItem__title {
+    font-family: 'Roboto', 'Spectral SC', sans-serif;
+    color: var(--blue);
+    font-size: 2.2rem;
+  }
+  .projectItem__desc {
+    color: var(--blue);
+    font-size: 1.6rem;
     font-family: 'Roboto', 'Spectral SC', sans-serif;
     margin-top: 1rem;
-}
-@media only screen and (max-width: 600px) {
+  }
+  @media only screen and (max-width: 768px) {
     .projectItem__img {
-        height: 200px;
+      height: 350px;
     }
+  }
+`;
 
-`
 
 
-export default function ProjectItem() {
+export default function ProjectItem( {
+    img = projectImg,
+    title = 'Project Name',
+    desc = 'Lorem ipsum dolor sit amet, consectetu',
+    link = '#',
+    dep = 'View Project',
+    
+    }) {
     return (
         <ProjectItemStyles>
-        <div>
           <Link to="/projects" className='projectItem__img' >
-              <img src={ projectImg } alt=" project img"/> </Link>  
+              <img src={ img } alt="project img" /> </Link>  
               <div className='projectItem__text'>
                 <Link to="#" class>
-                    <h3 className="projectItem__title" >Project 1</h3>
+                    <h3 src={link} className="projectItem__title" >{title}</h3>
                 </Link>
-                <p className="projectItem_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                <p className="projectItem_desc">{desc}</p>
+                <p><a href={link} target="_blank" rel="noreferrer">GitHub code</a></p>
+                <p><a href={dep} target="_blank" rel="noreferrer">See project</a></p>
             </div>
-        </div>
         </ProjectItemStyles>
     )
 }
