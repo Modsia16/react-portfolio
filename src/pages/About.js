@@ -85,7 +85,7 @@ export default function About() {
                                 My goal is to be a part of a team that will help you to build something great.
                             </PText>
                         </div>
-                        <Button btnLink="#" btnText="Download Resume" />
+                        <Button btnLink="/resume" btnText="Download Resume" />
                         </div>
                         <div className="right">
                         <img src={SelfT} alt="" />
@@ -96,7 +96,7 @@ export default function About() {
                     <h1 className="ed-heading">
                     Education
                     </h1>
-                    <AboutInfoItems 
+                    <AboutInfoItems
                     title="Certs"
                     items={["UC Davis, Davis, CA - Full Stack Web Development"]}
                     />
@@ -105,32 +105,33 @@ export default function About() {
                     items={["CSU Stainslaus, Turlock, CA - BS Health Sciences", "SJDC, Stockton, CA - AS Mathematics and Science"]}
                     />
                 </div>
-                <div className="about-info-item">
                     <h1 className="ed-heading">Skills</h1>
+                <div className="about-info-item">
                     <AboutInfoItems
-                    title="Languages"
-                    items={["HTML"]}
+                    title="Browser Based Technologies"
+                    items={["HTML/CSS", "JavaScript/jQuery", "Bootstrap", "Handlebars"]}
+                    addlitems={["Local storage", "Session Storage", "IndexDB"]}
                     />
                     <AboutInfoItems
-                    title="Platforms, concepts and tech"
-                    items={["HTML"]}
+                    title=" Databases and SSDs"
+                    items={["User Authentication", "PWAs", "MERN Stack", "MySQL"]}
                     />
                     <AboutInfoItems
-                    title="Front end"
-                    items={["HTML"]}
+                    title="API Interaction"
+                    items={["API", "JSON", "AJAX"]}
                     />
                     <AboutInfoItems
-                    title="Back end"
-                    items={["HTML"]}
+                    title="CS applied to JavaScript"
+                    items={["Algorithms", "Efficiency", "Time Complexity", "Big O Notation", "Data Structures"]}
                     />
                     </div>
-                <div className="about-info-item">
-                    <h1 className="ed-heading">Experience</h1>
+                <h1 className="ed-heading">Experience</h1>
+                    <div className="about-info-item">
                     <AboutInfoItems
                     title="Projects"
                     items={["Timed quiz", "Fitness Tracker", "Fullstack applications", "Personal website"]}
                     />
-                    </div>
+                </div>
             </div>
         </div>
         </AboutStyles>

@@ -74,10 +74,8 @@ export default function AboutSection() {
                     heading="About me"
                     />
                     <PText>
-                        I have experience using an array of web development systems. 
-                        Including HTML, CSS, JavaScript, MERN stack, progressive web apps and more!
-                        With a strong work ethic and meticulous attention to detail I am confident 
-                        I can create a unique design for your website!
+                    
+
                     </PText>
                 <div className="aboutSection-buttons">
                     <Button btnLink="/projects" btnText="Works" />

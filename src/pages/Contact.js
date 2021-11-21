@@ -1,9 +1,10 @@
-import React from 'react'
-// import 'react-router-dom'
+import React from 'react';
+import ContactPg from '../components/ContactPg';
+
 export default function Contact() {
-    return (
-        <div>
-            <h1>Contact me</h1>
-        </div>
-    )
+  return (
+    <>
+      <ContactPg />
+    </>
+  );
 }

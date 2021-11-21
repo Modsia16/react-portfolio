@@ -10,21 +10,22 @@ const AboutInfoItemsStyled = styled.div`
     margin-top: 3rem;
     .title {
         font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    .ed-subhead {
+        margin-right: 3rem;
     }
     .items {
         display: flex;
-        gap: 1rem;
-        left: 18rem;
-
+        gap: 0.5rem;
     }
     .item {
         color: var(--white);
         background-color: var(--blue);
-        border-radius: 2rem;
-        padding: 1rem;
-        margin: 0.5rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
         .para {
-            max-width: 20rem;
+            max-width: 100rem;
         }
     }
     @media only screen and (max-width: 768px) {
@@ -36,7 +37,7 @@ const AboutInfoItemsStyled = styled.div`
             gap: 1rem;
         }
         .title {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
     }
 `
@@ -46,7 +47,9 @@ export default function AboutInfoItems({
     items=["HTML", "CSS", "JS", "React"]}) {    
     return (
         <AboutInfoItemsStyled>
-         <h1 className="title">{title}</h1>   
+        <div className="ed-subhead">
+         <h1 className="title">{title}</h1>
+         </div>   
          <div className="items">
                 {items.map((item, index) => (
                     <div className="item" key={index}>

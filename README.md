@@ -7,13 +7,13 @@
 
 ## About
 
-As a web developer I want to create my own portfolio using React
+As a web developer I want to create my own portfolio using React, initiall this was meant to be a single page app but as my learning progressed
+this turned into a multifacited portfolio 
 
-Given a single-page application portfolio
 - When I load the portfolio, then I am presented with a page containing a header, a section for content, and a footer
 - When I view the header, then I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
 - When I view the navigation titles, then I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the - current section is highlighted
-- When I click on a navigation title, then I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+- When I click on a navigation title, then I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted - * this has been changed to routed pages 
 - When I load the portfolio the first time, then the About Me title and section are selected by default
 - When I am presented with the About Me section, then I see a recent photo or avatar of the developer and a short bio about them
 - When I am presented with the Portfolio section, then I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
@@ -28,7 +28,12 @@ Given a single-page application portfolio
 In addition to the standard React install this app also incorporated
 - react-router-dom
 - react-icons
-- stuled-components
+- styled-components
+- swiper
+- uuid
+
+Starting with the initial index and App files, I progressivly built my components depending on the section topic. The pages also required some 
+components files to be built as well. I had to uninstall and reinstall swiper to a older version and Switch did not working in the react-router-dom but using Router did. In the future I will rework the design from the simple blue and white to something more engaging and softer colors.
 
 ## Getting Started with Create React App
 

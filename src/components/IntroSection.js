@@ -72,9 +72,9 @@ export default function IntroSection() {
                     <img src={IntroImg} alt=''/>
                 </div>
                 <div className='intro__text'>
-                    <PText>I am a junior web developer based 
-                        in Northern California. 
-                        I love to code and have fun.
+                    <PText>Junior web developer based in Northern California. I have a passion for creating clean, responsive, and user-friendly websites. 
+                        I have always been draw to to the innovative and analyitcal aspects of web development. When I am not coding I enjoy spending time in nature.
+                        If you are looking for a developer to join your team, I would love to hear from you!
                         </PText>
                         <Button btnText='See my work' btnLink='/projects' outline={false}/>
                 </div>
