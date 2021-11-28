@@ -35,6 +35,10 @@ In addition to the standard React install this app also incorporated
 Starting with the initial index and App files, I progressivly built my components depending on the section topic. The pages also required some 
 components files to be built as well. I had to uninstall and reinstall swiper to a older version and Switch did not working in the react-router-dom but using Router did. In the future I will rework the design from the simple blue and white to something more engaging and softer colors.
 
+## Demo
+
+![demo](./src/assets/gif/portfolio.gif)
+
 ## Getting Started with Create React App
 
 ### Installation

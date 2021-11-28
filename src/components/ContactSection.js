@@ -33,7 +33,7 @@ export default function ContactSection() {
                 <PText>
                     Contact me
                 </PText>
-                <h3 className="contact__heading">Lets work together</h3>
+                <h3 className="contact__heading">Let's work together</h3>
             <Button btnText="Contact Now" btnLink="/contact" />
             </div>
         </div>
