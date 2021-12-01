@@ -3,6 +3,7 @@
   ## Table of Contents
   * [About](#about)
   * [Build](#build)
+  * [Demo](#demo)
   * [Installation](#installation)
 
 ## About
@@ -38,7 +39,8 @@ components files to be built as well. I had to uninstall and reinstall swiper to
 ## Demo
 
 ![demo](./src/assets/gif/portfolio.gif)
-
+![Githubpages-link] https://modsia16.github.io/react-portfolio/
+![netlify-link] https://carina-diaz-portfolio.netlify.app/
 ## Getting Started with Create React App
 
 ### Installation
