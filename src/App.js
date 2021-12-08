@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
+
 //components, Switch was not working, changed to Routes and Route
 export default function App() {
     return (
@@ -17,11 +18,11 @@ export default function App() {
         <Router>
         <NavBar />
         <Routes>
-        <Route exact path="/about" element={<About/>}></Route>
-        <Route exact path="/projects" element={<Projects/>}></Route>
-        <Route exact path="/contact" element={<Contact/>}></Route>
-        <Route exact path="/resume" element={<Resume/>}></Route>
-        <Route exact path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/projects" element={<Projects/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/resume" element={<Resume/>}></Route>
+        <Route exact path="/react-portfolio" element={<Home/>}></Route>
         </Routes>
         <Footer />
         </Router>

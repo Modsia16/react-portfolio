@@ -59,12 +59,12 @@ export default function ProjectItem( {
           <Link to="/projects" className='projectItem__img' >
               <img src={ img } alt="project img" /> </Link>  
               <div className='projectItem__text'>
-                <Link to="#" class>
-                    <h3 src={link} className="projectItem__title" >{title}</h3>
+                <Link to="#" className="projectItem__info">
+                    <h3 src={ link } className="projectItem__title" >{ title }</h3>
                 </Link>
                 <p className="projectItem_desc">{desc}</p>
-                <p><a href={link} target="_blank" rel="noreferrer">GitHub code</a></p>
-                <p><a href={dep} target="_blank" rel="noreferrer">See project</a></p>
+                <p><a href={ link } target="_blank" rel="noreferrer">GitHub code</a></p>
+                <p><a href={ dep } target="_blank" rel="noreferrer">See project</a></p>
             </div>
         </ProjectItemStyles>
     )

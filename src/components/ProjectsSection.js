@@ -82,13 +82,13 @@ export default function ProjectsSection() {
                     // eslint-disable-next-line array-callback-return
                     if (index >= 6) return;
                     return (
-                        <SwiperSlide key={project.id}>
+                        <SwiperSlide key={ project.id }>
                         <ProjectItem                         
-                        title={project.name}
-                        img={project.img}
-                        desc={project.desc}
-                        link={project.url}
-                        dep={project.dep}
+                        title={ project.name }
+                        img={ project.img }
+                        desc={ project.desc }
+                        link={ project.url }
+                        dep={ project.dep }
                         />
                         </SwiperSlide>
                     )

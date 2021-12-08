@@ -35,6 +35,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   return (
+    <>
       <ContactFormStyle>
         <div className="form-group">
           <label htmlFor="name">
@@ -74,5 +75,6 @@ export default function ContactForm() {
         </div>
         <Button btnLink="/contact" btnText="Send" />
       </ContactFormStyle>
+    </>
   );
 }

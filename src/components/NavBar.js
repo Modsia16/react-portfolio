@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 import { MdMenu, MdClose } from 'react-icons/md';
@@ -104,8 +104,8 @@ const NavBarStyle = styled.div`
 //NavLink from react router dom to create a link that is active when the user is on that page
 export default function NavBar() {
     //add mobile screen function to the navbar to toggle, tab for key down event and hide items after clicked
-    const[showNav, setShowNav] = React.useState(false);
-    return(
+    const [showNav, setShowNav] = useState(false);
+    return (
    <NavBarStyle>
             <h1 className="logo">
                 <p>CarilyWebDev</p>

@@ -47,6 +47,7 @@ font-family: 'Roboto', 'Spectral SC', sans-serif;
 
 export default function Resume() {
     return (
+        <>
         <ResumeSectionStyle>
         <div className="container">
             <div className="resumeDl__wrapper">
@@ -56,16 +57,20 @@ export default function Resume() {
                 </PText>
             </div>
             <div className="resume__contact">
-                <p>phone</p>
-                <p>email</p>
-                <p>GitHub</p>
-                <p>Linkedin</p>
+                <ul>
+                <li>phone</li>
+                <li>email</li>
+                <li>github</li>
+                <li>linkedin</li>
+                </ul>
             </div>
             <div>
                 <h1 className="resume__name">Carina Diaz</h1>
             </div>
 
             <div className="resume__body">
+                <h2>Intro</h2>
+                <br></br>
                 <p>
                 Accomplished coordinator and administrator with experience in providing support
                 to high-level operations and leadership for 8+ years. Helped with everything
@@ -111,8 +116,8 @@ export default function Resume() {
                 <h4 className="area_subhead">Computer Science, Browser Based Technologies and Databases</h4>
                     <p>HTML/CSS, JavaScript/jQuery, Git, Responsive Design, Bootstrap, Handlebars,
                         Local Storage, Session Storage, IndexedDB, React.js, MySQL, NoSQL, User
-                        Authentication, Progressive Web Applications (PWAs), MERN Stack (MongoDB,
-                        Express.js, React.js, Node.js), API, JSON, AJAX, Algorithms (Searches, Sorts),
+                        Authentication, Progressive Web Applications PWAs, MERN Stack MongoDB,
+                        Express.js, React.js, Node.js, API, JSON, AJAX, Algorithms Searches, Sorts,
                         Big O Notation, data Structures, Microsoft Office</p>
                         <br /><br />
                 <h4 className="area_subhead">Interdisciplinary Professional Skills</h4>
@@ -123,7 +128,6 @@ export default function Resume() {
                         </p>
                         <br /><br />
                 <h4 className="area_subhead">San Joaquin Delta College, Stockton, California January 2010 - May 2016</h4>
-                    <p></p>
                 </div>
                 <div>
                 <h2 className="resume__sub">Work Experience</h2>
@@ -142,7 +146,7 @@ export default function Resume() {
                         <br /><br />
                 <h4 className="area_subhead">Compliance Coordinator — Cintas Corporation, June 2017 - Sept 2020, Stockton, CA</h4>
                     <p>Promoted to the role of Compliance Coordinator. Health and Safety Coordinator
-                        (HSC) duties, data management, maintenance coordinator, environmental and
+                        HSC duties, data management, maintenance coordinator, environmental and
                         regulatory compliance administrator, accomplish organizational goals, manage
                         critical staff, track and evaluate leading/lagging indicators, accident
                         investigation, training coordinator and team lead. Assist HR with workers
@@ -158,10 +162,10 @@ export default function Resume() {
                 <h4 className="area_subhead">Quality Assurance — Cintas Corporation, Jan 2010 - Dec 2014, Stockton, CA</h4>
                     <p>Monitor quality of customer return products, maintain inventory, delivery
                         scheduling, department safety and training coordination</p>
-                        <br /><br />
                 </div>
             </div>
         </div>
-    </ResumeSectionStyle>      
+    </ResumeSectionStyle>  
+    </>    
     )
 }

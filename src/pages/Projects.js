@@ -68,6 +68,7 @@ function handleChange(e) {
     }
 };
     return (
+        <>
         <ProjectsStyles>
             <div className="container">
                 <SectionTitle heading="Projects" subheading="some of my recent" />
@@ -92,5 +93,6 @@ function handleChange(e) {
                 </div>
             </div>
         </ProjectsStyles>
+        </>
     )
 }

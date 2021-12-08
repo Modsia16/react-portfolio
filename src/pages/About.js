@@ -63,6 +63,7 @@ font-family: 'Roboto', 'Spectral SC', sans-serif;
 
 export default function About() {
     return (
+        <>
         <AboutStyles>
             <div className="container">
                 <div className="top-section">
@@ -135,5 +136,6 @@ export default function About() {
             </div>
         </div>
         </AboutStyles>
+        </>
     )
 }
