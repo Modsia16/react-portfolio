@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { MdMenu, MdClose } from 'react-icons/md';
 
@@ -124,39 +124,39 @@ export default function NavBar() {
                     <MdClose />
                 </div>
                 <li>
-                    <NavLink to="/" exact onClick={() => 
+                    <Link to="/" onClick={() => 
                     setShowNav(!showNav)}
                     role="button"
                     onKeyDown={() => setShowNav(!showNav)}
-                    tabIndex={0}>Home</NavLink>
+                    tabIndex={0}>Home</Link>
                 </li>
                 <li>
-                    <NavLink to="/about" onClick={() => 
+                    <Link to="/about" onClick={() => 
                     setShowNav(!showNav)}
                     role="button"
                     onKeyDown={() => setShowNav(!showNav)}
-                    tabIndex={0}>About Me</NavLink>
+                    tabIndex={0}>About Me</Link>
                 </li>
                 <li>
-                    <NavLink to="/projects" onClick={() => 
+                    <Link to="/projects" onClick={() => 
                     setShowNav(!showNav)}
                     role="button"
                     onKeyDown={() => setShowNav(!showNav)}
-                    tabIndex={0}>Portfolio</NavLink>
+                    tabIndex={0}>Portfolio</Link>
                 </li>
                 <li>
-                    <NavLink to="/contact" onClick={() => 
+                    <Link to="/contact" onClick={() => 
                     setShowNav(!showNav)}
                     role="button"
                     onKeyDown={() => setShowNav(!showNav)}
-                    tabIndex={0}>Contact</NavLink>
+                    tabIndex={0}>Contact</Link>
                 </li>
                 <li>
-                    <NavLink to="/resume"onClick={() => 
+                    <Link to="/resume"onClick={() => 
                     setShowNav(!showNav)}
                     role="button"
                     onKeyDown={() => setShowNav(!showNav)}
-                    tabIndex={0} >Resume</NavLink>
+                    tabIndex={0} >Resume</Link>
                 </li>
             </ul>
         </NavBarStyle>
