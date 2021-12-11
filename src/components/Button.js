@@ -22,10 +22,10 @@ const ButtonStyle = styled.div`
 `
 
 // on IntroSection,
-export default function Button({ btnText, btnLink, outline }) {
+export default function Button({ btnText, btnLink, outline, docDl }) {
     return (
         <ButtonStyle outline={outline} className="button-wrapper">
-            <Link className="button" to={ btnLink }> { btnText } </Link>
+            <Link className="button" to={ btnLink } download={ docDl }> { btnText } </Link>
         </ButtonStyle>
     )
 }

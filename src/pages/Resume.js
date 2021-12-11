@@ -1,7 +1,6 @@
 import React from 'react'
 //import { Document, Page } from 'react-pdf'
 import styled from 'styled-components'
-import Button from '../components/Button'
 import PText from '../components/PText'
 
 const ResumeSectionStyle = styled.div`
@@ -9,6 +8,22 @@ background-color: var(--white);
 color: var(--blue);
 padding: 2rem;
 font-family: 'Roboto', 'Spectral SC', sans-serif;
+button {
+    font-family: 'Roboto', 'Spectral SC', sans-serif;
+    font-size: 1.5rem;
+    background-color: ${(props) => props.outline ? 'transparent' : 'var(--grey)'};
+    color: ${(props) => props.outline ? 'var(--grey)' : 'var(--blue)'};
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid var(--grey);
+    text-decoration: none;
+    @media only screen and (max-width: 768px) {
+        .button {
+            font-size: 1.2rem;
+        }
+    }
+}
 .resumeDl__wrapper {
     background-color: var(--blue);
     color: var(--white);
@@ -52,8 +67,9 @@ export default function Resume() {
         <div className="container">
             <div className="resumeDl__wrapper">
                 <PText>
-                    Download my Resume
-                 <Button btnText="Resume" btnLink="/resume" />
+                 <button btnText="Resume" btnLink="#" docDl="./docs/resumecld.pdf" >
+                     <a href="./docs/resumecld.pdf" download>Resume</a>
+                    </button>
                 </PText>
             </div>
             <div className="resume__contact">
