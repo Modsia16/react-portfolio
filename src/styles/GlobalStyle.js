@@ -7,16 +7,16 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     :root{
-        --white : #ffffff;
+        --white : #ECF0F1;
         --black : #000000;
-        --grey : #e1e1e1;
-        --light-grey : #C0C0C0;
-        --dark-grey : #333;
-        --red : #ff0000;
-        --dark-slate-grey : #2f4f4f; 
-        --blue : #000080;
-        --yellow : #C6D32C;
-        --light-blue : #27B5DD;
+        --grey : #757575;
+        --light-grey : #BDBDBD;
+        --dark-grey : #424242;
+        --red : #B71C1C;
+        --dark-slate-grey : #212121; 
+        --blue : #0D47A1;
+        --yellow : #EEFF41;
+        --light-blue : #40C4FF;
     }
     ul, li {
         list-style: none;
@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     .container {
         max-width: 1200px;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
     }
     `;
 

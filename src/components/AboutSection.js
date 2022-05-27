@@ -7,9 +7,9 @@ import AboutImg from '../assets/images/big-basin.png'
 //import SelfImg from '../assets/images/lights-self.png'
 
 const AboutSectionStyled = styled.div`
-    background-color: var(--blue);
+    background-color: var(--yellow);
     padding: 5rem 0;
-    color: var(--white);
+    color: var(--dark-slate-grey);
     .container {
         display: flex;
         align-items: center;

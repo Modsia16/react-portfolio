@@ -4,14 +4,14 @@ import styled from 'styled-components'
 import PText from '../components/PText'
 
 const ResumeSectionStyle = styled.div`
-background-color: var(--white);
-color: var(--blue);
+background-color: var(--dark-slate-grey);
+color: var(--white);
 padding: 2rem;
 font-family: 'Roboto', 'Spectral SC', sans-serif;
 button {
     font-family: 'Roboto', 'Spectral SC', sans-serif;
     font-size: 1.5rem;
-    background-color: ${(props) => props.outline ? 'transparent' : 'var(--grey)'};
+    background-color: ${(props) => props.outline ? 'transparent' : 'var(--light-grey)'};
     color: ${(props) => props.outline ? 'var(--grey)' : 'var(--blue)'};
     padding: 1rem 2rem;
     border-radius: 8px;

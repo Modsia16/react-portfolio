@@ -5,15 +5,18 @@ import { MdMenu, MdClose } from 'react-icons/md';
 
 //nav bar style and function from, root folder in GlobalStyle.js
 const NavBarStyle = styled.div`
-    background: var(--blue);
-    z-index: 100;
+    background: var(--dark-slate-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
     left: 0;
-    top: 0;
+    top: 0px;
     width: 100%;
-    padding: 5px 0 0 0;
+    padding: 0px 50px 0 50px;
     position: fixed;
      .logo {
-        color: var(--white);
+        color: var(--yellow);
         padding: 0 1rem;
         font-size: 2rem;
         font-weight: bold;
@@ -25,11 +28,11 @@ const NavBarStyle = styled.div`
         max-width: 1200px;
         margin: 0 auto;
         width: 90%;
-        text-align: center;
+        text-align: right;
         display: inline-block;
     li {
         display: inline-block;
-        border-right: 8px solid var(--blue);
+        border-right: 1px solid var(--dark-slate-grey);
         transition: 0.3s ease-in-out;
         list-style: none;
         &:hover {
@@ -40,8 +43,8 @@ const NavBarStyle = styled.div`
         color: var(--yellow);
         text-decoration: none;
         display: inline-block;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
+        font-size: 1 rem;
+        padding: 1rem 0.5rem;
         font-family: 'Roboto', 'Spectral SC', sans-serif;
     }
     .active {
@@ -70,12 +73,12 @@ const NavBarStyle = styled.div`
         }
         .mobile-menu-icon {
             display: block;
-            color: var(--white);
+            color: var(--yellow);
         }
         .navItems {
             --top: 1rem;
             transition: 0.3s transform ease-in-out;
-            background: var(--blue);
+            background: var(--dark-slate-grey);
             padding: 2rem;
             width: 90%;
             max-width: 300px;
@@ -88,7 +91,7 @@ const NavBarStyle = styled.div`
                 width: 3rem;
                 margin: 0 0 0 auto;
                 cursor: pointer;
-                color: var(--white);
+                color: var(--yellow);
                 * {
                     pointer-events: none;
                 }

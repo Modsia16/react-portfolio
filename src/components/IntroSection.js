@@ -7,6 +7,7 @@ import PText from './PText';
 // Intro styles in addition to the default styles
 const IntroStyles = styled.div`
 .intro { 
+    background-color: var(--dark-slate-grey);
     height: 100vh;
     min-height: 1000px; 
     width: 100%;
@@ -15,12 +16,11 @@ const IntroStyles = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    color: var(--blue);
+    color: var(--yellow);
 }
 .intro__heading {
+    margin-top: 5rem;
     font-size: 3rem;
-    margin-bottom: 4rem;
     position: relative;
     span {
         display: inline-block;
